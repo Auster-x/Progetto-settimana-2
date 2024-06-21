@@ -17,7 +17,7 @@
     margin-left: 1em;
 }
 
-.navBox{
+.navBox {
     background-color: #364759;
     padding: 0.5em;
 }
@@ -33,11 +33,76 @@
 
 .navList li {
     margin-left: 1em;
-    list-style-type: none;
+    align-content: center;
 }
 
-a:link,
-a:visited {
-    text-decoration: none;
+.main {
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #E9EDEE;
+}
+
+.shopHoliday {
+    background-color: #F56600;
+    width: auto;
+    padding: 0.1em;
+}
+
+.shopHoliday p {
+    font-size: 0.8em;
+    text-align: center;
+    font-weight: bold;
     color: white;
+}
+
+.holidayGuides {
+
+    background-image: url(../img/bg-image.png);
+    background-size: contain;
+    margin: 1rem 0;
+    padding: 2em 0;
+}
+
+.holidayGuides h1, h2 {
+    margin: 0;
+    text-align: center;
+    color: white;
+
+}
+
+.perfectGift{
+    text-align: center;
+    background-color: white;
+
+}
+
+.perfectGift img {
+    width: calc(25% - 20px);
+    display: inline-block;
+    margin: 1em 10px;
+    height: 20em;
+    border-radius: 15px;
+    -webkit-box-shadow: 8px 10px 35px -15px #000000; 
+    box-shadow: 8px 10px 35px -15px #000000;
+    object-fit: cover;
+}
+
+.gameGift {
+    text-align: center;
+}
+
+.gameGift img {
+    width: 100%;
+padding: 2em 0;
+object-fit: cover;
+}
+
+.soundGift {
+    text-align: center;
+}
+
+.soundGift img {
+    width: 100%;
+padding: 2em 0;
+object-fit: cover;
 }
