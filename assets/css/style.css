@@ -106,3 +106,27 @@ object-fit: cover;
 padding: 2em 0;
 object-fit: cover;
 }
+
+.footer {
+    text-align: center;
+}
+
+.anchor {
+    background-color: #364759;
+    padding: 0.5em;
+}
+
+.anchor a {
+    color: white;
+    text-decoration: none;
+}
+
+.footerLogoBox {
+    background-color: #222F3F
+
+}
+
+.footerLogo {
+    width: 8em;
+    padding: 4em;
+}
