@@ -114,7 +114,22 @@ const justTrims = []
 */
 const numericArray = [
     6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
-]
+];
+
+console.log("Risoluzione Esercizio 9");
+;
+let i = 0
+
+while (i < numericArray.lenght) {
+    const element2 = numericArray[i];
+    console.log(element2);
+    if (element2 === 32) { 
+        break;}
+        i++;
+}
+
+console.log() // non riesco a trovare il modo di mostrarlo in console e mi ha preso quasi tutto il tempo a disposizione.
+
 
 
 /* ESERCIZIO 10
