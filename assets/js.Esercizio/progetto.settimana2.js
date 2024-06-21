@@ -36,7 +36,7 @@ console.log(pets);
 */
 
 const changePet = pets.shift();
-pets3.push(changePet);
+pets.push(changePet);
 console.log(pets)
 
 /* ESERCIZIO 5
@@ -71,11 +71,26 @@ cars[2].licensePlate = "BG 789 EF"
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
+cars.push({
+    brand: 'Jeep',
+        model: 'Cheerokee',
+        color: 'dark-grey',
+        trims: ['cross', 'over', 'sport'],
+});
+
+cars.forEach(cars=> {
+    cars.trims.pop();
+});
+
+console.log(cars)
+
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
 const justTrims = []
+
+.push(justTrims)
 
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
