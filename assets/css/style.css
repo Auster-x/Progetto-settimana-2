@@ -67,7 +67,16 @@
     margin: 0;
     text-align: center;
     color: white;
+    padding: 0.5em 0;
+}
 
+.holidayGuides h1 {
+    font-size: 18pt;
+
+}
+
+.holidayGuides h2 {
+    font-size: 11pt;
 }
 
 .perfectGift{
@@ -87,13 +96,13 @@
     object-fit: cover;
 }
 
-.gameGift {
+.newGift {
     text-align: center;
 }
 
-.gameGift img {
+.newGift img {
     width: 100%;
-padding: 2em 0;
+padding-top: 2em;
 object-fit: cover;
 }
 
@@ -103,8 +112,19 @@ object-fit: cover;
 
 .soundGift img {
     width: 100%;
-padding: 2em 0;
+padding-top: 2em;
 object-fit: cover;
+}
+
+.caption {
+    margin:0;
+    padding:0.3em;
+}
+
+.fakeLink {
+    color: #3C8593;
+    font-size: 10pt;
+    font-weight: bold;
 }
 
 .footer {
