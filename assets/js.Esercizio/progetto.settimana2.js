@@ -10,6 +10,8 @@ REGOLE
 /* ESERCIZIO 1
     Dato il seguente array, scrivi del codice per stampare ogni elemento dell'array in console.
 */
+console.log("Risoluzione Esercizio 1")
+
 const pets = ['dog', 'cat', 'hamster', 'redfish']
 for (let i = 0; i < pets.length; i++) {
     const element = pets[i]
@@ -20,6 +22,7 @@ for (let i = 0; i < pets.length; i++) {
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
 
 */
+console.log("Risoluzione Esercizio 2")
 
 pets.sort();
 console.log(pets);
@@ -27,6 +30,7 @@ console.log(pets);
 /* ESERCIZIO 3
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
+console.log("Risoluzione Esercizio 3")
 
 pets.reverse();
 console.log(pets);
@@ -34,6 +38,7 @@ console.log(pets);
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 */
+console.log("Risoluzione Esercizio 4")
 
 const changePet = pets.shift();
 pets.push(changePet);
@@ -42,6 +47,8 @@ console.log(pets)
 /* ESERCIZIO 5
     Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
 */
+console.log("Risoluzione Esercizio 5")
+
 const cars = [
     {
         brand: 'Ford',
@@ -63,22 +70,26 @@ const cars = [
     },
 ]
 
-cars[0].licensePlate = "AS 123 DF"
-cars[1].licensePlate = "NA 456 CT"
-cars[2].licensePlate = "BG 789 EF"
+cars.forEach(cars => {
+    cars.plate = "FS 123 CTS";
+});
+
+console.log(cars)
 
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
+console.log("Risoluzione Esercizio 6")
+
 cars.push({
     brand: 'Jeep',
-        model: 'Cheerokee',
-        color: 'dark-grey',
-        trims: ['cross', 'over', 'sport'],
+    model: 'Cheerokee',
+    color: 'dark-grey',
+    trims: ['cross', 'over', 'sport'],
 });
 
-cars.forEach(cars=> {
+cars.forEach(cars => {
     cars.trims.pop();
 });
 
@@ -90,7 +101,7 @@ console.log(cars)
 */
 const justTrims = []
 
-.push(justTrims)
+
 
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
@@ -111,5 +122,69 @@ const numericArray = [
     dell'alfabeto italiano.
     es. [f, b, e] --> [6, 2, 5]
 */
+console.log("Risoluzione Esercizio 10")
+
 const charactersArray = ['g', 'n', 'u', 'z', 'd']
 const charactersToNumber = []
+
+
+charactersArray.forEach(charactersArray => {
+    let toNumber;
+    switch (charactersArray) {
+        case 'a': toNumber = 1;
+            break;
+        case 'b': toNumber = 2;
+            break;
+        case 'c': toNumber = 3;
+            break;
+        case 'd': toNumber = 4;
+            break;
+        case 'e': toNumber = 5;
+            break;
+        case 'f': toNumber = 6;
+            break;
+        case 'g': toNumber = 7;
+            break;
+        case 'h': toNumber = 9;
+            break;
+        case 'j': toNumber = 10;
+            break;
+        case 'k': toNumber = 11;
+            break;
+        case 'l': toNumber = 12;
+            break;
+        case 'm': toNumber = 13;
+            break;
+        case 'n': toNumber = 14;
+            break;
+        case 'o': toNumber = 15;
+            break;
+        case 'p': toNumber = 16;
+            break;
+        case 'q': toNumber = 17;
+            break;
+        case 'r': toNumber = 18;
+            break;
+        case 's': toNumber = 19;
+            break;
+        case 't': toNumber = 20;
+            break;
+        case 'u': toNumber = 21;
+            break;
+        case 'v': toNumber = 22;
+            break;
+        case 'w': toNumber = 23;
+            break;
+        case 'x': toNumber = 24;
+            break;
+        case 'y': toNumber = 25;
+            break;
+        case 'z': toNumber = 26;
+            break;
+        default: toNumber = -1;
+    }
+
+    charactersToNumber.push(toNumber)
+})
+
+console.log(charactersToNumber)
